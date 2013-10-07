@@ -330,7 +330,6 @@ def main():
     argc = len(argv)
     if argc == 1:
         raise NotifyUserError('No operation specified. Try `remctl sql help`.')
-        sys.exit(1)
     base = os.path.basename(argv[0])
     mode = argv[1]
     account = {'create': account_create,
